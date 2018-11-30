@@ -1,0 +1,15 @@
+{
+  "name": "courses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "angularDemoScript.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8001 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

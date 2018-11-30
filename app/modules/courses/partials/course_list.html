@@ -1,0 +1,28 @@
+<div ng-if = "courses.length>0">
+  <h4><a href="#/course/add">Add New Course</a></h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>S. No.</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Timeline</th>
+        <th>Price</th>
+        <th colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="course in courses | orderBy: 'name'">
+        <td>{{$index+1}}</td>
+        <td>{{course.name}}</td>
+        <td>{{course.category}}</td>
+        <td>{{course.timeline}}</td>
+        <td>{{course.price | currency}}</td>
+        <td><a href="#/course/edit/{{course._id.$oid}}">Edit</a></td>
+  			<td><button ng-click = "deleteCourse(course)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

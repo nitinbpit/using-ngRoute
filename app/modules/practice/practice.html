@@ -1,0 +1,20 @@
+<h3>Practice Page</h3>
+Movie: <input ng-model = 'movieTitle'></input>{{::movieTitle}}<br>
+
+Rating: <input ng-model = 'movieRating'></input><br>
+<h3>practiceCtrl:</h3>
+Movie: <input ng-model = 'practiceCtrl.movieTitle'></input>
+
+
+<div my-table-drctv
+  movie-title="movieTitle"
+  movie-rating = "{{movieRating}}"
+  show-movie = "showMovie()">
+  <h3>Directive's  Scope: (this text is injected via tranclusion)</h3>
+</div>
+<div my-table-drctv
+  movie-title="movieTitle"
+  movie-rating = "{{movieRating}}"
+  show-movie = "showMovie()">
+  <h3>Directive's  Scope: (this text is injected via tranclusion)</h3>
+</div>
